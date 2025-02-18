@@ -9,7 +9,9 @@ import { HeaderComponent } from './components/header/header.component';
     <app-header/>
     <router-outlet />
   `,
-  styles: [],
+  styles: `
+    
+  `,
 })
 export class AppComponent {
   title = 'angular-ecomm';

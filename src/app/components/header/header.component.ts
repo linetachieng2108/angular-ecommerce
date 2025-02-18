@@ -5,14 +5,21 @@ import { Component, signal } from '@angular/core';
   imports: [],
   // template shows static data
   template: `
-    <p>
+    <!-- <p>
       {{ title }}
-    </p>
-    <p>
+    </p> -->
+    <div class="header">
       {{ head() }}
-    </p>
+    </div>
   `,
-  styles: ``
+  styles: `
+  .header{
+      background-color: #333;
+      color: black;
+      padding:1rem;
+    }
+
+    `,
 })
 
 // Dynamic data is displayed here using signals

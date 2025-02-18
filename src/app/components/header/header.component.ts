@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,13 +6,17 @@ import { Component } from '@angular/core';
   // template shows static data
   template: `
     <p>
-      header works!
+      {{ title }}
+    </p>
+    <p>
+      {{ head() }}
     </p>
   `,
   styles: ``
 })
 
-// Dynamic data is displayed here
+// Dynamic data is displayed here using signals
 export class HeaderComponent {
-
+  title ='My E-Commerce App';
+  head = signal('Angular Ecommerce')
 }
